@@ -8,3 +8,16 @@ Springboot的版本为**2.X**以上
 
 主要更新一些Java方面的技术文章
 
+目前已经完成：
+
+### Springboot整合ElasticSearch的使用
+
+* index创建和mapping设置
+* 使用Spring Data封装好的CRUD方式
+* 使用Spring Data中的NativeQuery，例如ElasticSearch中的term查询、querystring查询
+
+### Springboot整合Redis的使用
+
+* Redis连接池的配置、乱码的解决
+* Redis常用数据结构的存储、获取，例如String和list
+* 利用Redis中的SUB/PUB模式实现消息的自动消费
