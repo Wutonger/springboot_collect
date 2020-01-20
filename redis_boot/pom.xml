@@ -12,5 +12,18 @@
     <artifactId>redis_boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <dependencies>
+<!--        添加springboot-redis集成依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+<!--        必须加入该依赖，否则创建redisTemplate时会报NoClassDeFoundError-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>
