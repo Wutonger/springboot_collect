@@ -18,6 +18,7 @@ Springboot的版本为**2.X**以上
 
 ### Springboot整合Redis的使用
 
-* Redis连接池的配置、乱码的解决
-* Redis常用数据结构的存储、获取，例如String和list
+* Redis连接池的配置、redisTemplate乱码问题解决
+* Redis常用数据结构的存储、获取，例如String与List
 * 利用Redis中的SUB/PUB模式实现消息的自动消费
+* 使用Redis实现分布式锁— 主要原理为set  nx px命令
