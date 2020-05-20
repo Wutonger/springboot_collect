@@ -77,10 +77,8 @@ public class RedisLock {
                 "return redis.call('del', KEYS[1]) else return 0 end";
         RedisScript<Long> script = new DefaultRedisScript<>(lua, Long.class);
         Long result = redisTemplate.execute(script, Collections.singletonList(KEY), uuid);
-        if (1L == result) {
-            return true;
-        }
-        return false;
+        return 1L == result;
+
     }
 
 }
